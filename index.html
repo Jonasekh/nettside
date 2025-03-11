@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig økonomi - Utforsk yrker</title>
+    <link rel="stylesheet" href="css/hoved.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Økonomi for Livet</h1>
+            <h3>Velg et yrke og lær om inntektsmuligheter, utdanningskrav, og hvordan økonomiske valg kan påvirke deg og fremtiden din.</h3>
+        </div>
+    </header>
+    
+    <section class="career-grid">
+        <!-- JavaScript lager career boxes her -->
+    </section>
+
+    <!-- Modal for career details -->
+    <div id="careerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="careerImage">
+            <h2 id="careerTitle"></h2>
+            <p id="careerDescription"></p>
+            <p><strong>Utdanningstid:</strong> <span id="careerEducation"></span></p>
+            <p><strong>Gjennomsnittslønn:</strong> <span id="careerSalary"></span></p>
+            <button id="taskButton" onclick="goToOppgaver()">Se oppgaver</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Laget av Jonas Ekholdt | E-post: <a href="mailto:jonas-ekholdt@hotmail.com">jonas-ekholdt@hotmail.com</a></p>
+    </footer>
+
+    <script src="js/hoved.js"></script>
+</body>
+</html>

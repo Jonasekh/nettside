@@ -1,0 +1,139 @@
+body {
+    background-image: url('../bilder/bakgrunn_body.png'); /* Bakgrunnsbilde for header */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+header {
+    background-color: #e3f2fd;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+    background-color: rgba(84, 161, 212, 0.936); /* Mørk overlegg for å gjøre teksten mer lesbar */
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+header p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+video {
+    width: 64%;
+    border-radius: 10px;
+}
+/* Career grid styling */
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.career-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.career-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.career-box h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+#taskButton {
+    background-color: #1b4ab0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#taskButton:hover {
+    background-color: #0b0469;
+}
+.career-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    color: #333;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
